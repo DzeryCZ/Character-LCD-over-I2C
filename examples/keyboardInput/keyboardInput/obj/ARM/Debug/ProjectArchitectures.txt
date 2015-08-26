@@ -1,0 +1,1 @@
+F:\WIN10\displayI2C\examples\keyboardInput\keyboardInput\keyboardInput.csproj;arm
