@@ -1,5 +1,5 @@
-Character-LCD-over-I2C 
-======================
+Character LCD display over I2C 
+=============================
 Connect HD44780 LCD character display to Windows 10 IoT devices via I2C and PCF8574
 
     Author: Jaroslav Zivny
