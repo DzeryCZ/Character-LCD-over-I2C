@@ -24,21 +24,17 @@ I2C bus is initialized by library constructor. You have to define there also PCF
     displayI2C lcd = new displayI2C(DEVICE_I2C_ADDRESS, I2C_CONTROLLER_NAME, RS, RW, EN, D4, D5, D6, D7, BL);
 
 
-Default `DEVICE_I2C_ADDRESS` is `0x27` (you can change it by A0-2 pins on PCF8574 - for more info please read PCF8574 datasheet)
+Default `DEVICE_I2C_ADDRESS` is `0x27` (you can change it by A0-2 pins on PCF8574 - for more info please read datasheet)
 
-`I2C_CONTROLLER_NAME` for Raspberry Pi 2 is `"I2C1"`
+`I2C_CONTROLLER_NAME` for Raspberry Pi 2 is `"I2C1"` (For Arduino it should be `"I2C5"`, but I did't test it.)
 
-For Arduino it should be `"I2C5"`, but I did't test it.
+Other arguments are: RS = 0, RW = 1, EN = 2, D4 = 4, D5 = 5, D6 = 6, D7 = 7, BL = 3
 
-Other arguments should be: RS = 0, RW = 1, EN = 2, D4 = 4, D5 = 5, D6 = 6, D7 = 7, BL = 3
-
-But it depends on your PCF8574.
+But the number of pins depends on your PCF8574.
 
 ------------------------------------------------------
 
-Initialization of HD44780 display do by init method.
-
-By arguments you can turnOnDisplay, turnOnCursor, blinkCursor, cursorDirection and textShift (in this order)
+Initialization of HD44780 display do by init method. [More info](#init)
 
     lcd.init();
     
