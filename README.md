@@ -12,7 +12,7 @@ Connect
 ![Connection](https://cloud.githubusercontent.com/assets/4294781/9507211/d25680f4-4c4c-11e5-8aa1-9aada70caa25.jpg)
 
 
-Basic usage
+Basic usage (tl;dr)
 ===============
 
 Initialization
@@ -28,7 +28,7 @@ Default `DEVICE_I2C_ADDRESS` is `0x27` (you can change it by A0-2 pins on PCF857
 
 `I2C_CONTROLLER_NAME` for Raspberry Pi 2 is `"I2C1"` (For Arduino it should be `"I2C5"`, but I did't test it.)
 
-Other arguments are: RS = 0, RW = 1, EN = 2, D4 = 4, D5 = 5, D6 = 6, D7 = 7, BL = 3
+Other arguments are: RS = 0, RW = 1, EN = 2, D4 = 4, D5 = 5, D6 = 6, D7 = 7, BL = 3 (by default)
 
 But the number of pins depends on your PCF8574.
 
@@ -45,7 +45,13 @@ Print string just by prints method e.g.
 
     lcd.prints("Good morning");
     
-    
+
+
+------------------------------------------------------
+
+------------------------------------------------------
+
+
 Methods
 =========
 
