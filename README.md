@@ -120,7 +120,7 @@ Arguments:
 gotoSecondLine
 --------------
 
-Move cursor to start of second line
+Move cursor to start of the second line
 
 No arguments
 
@@ -139,7 +139,7 @@ Arguments:
 clrscr
 ------
 
-Clear whole screen and move cursor at start
+Clear screen and move cursor to start
 
 No arguments
 
