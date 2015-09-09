@@ -87,15 +87,6 @@ No arguments
 
 
 
-turnOffBacklight
----------------
-
-Turn the Back light OFF
-
-No arguments 
-
-
-
 prints
 ------
 
