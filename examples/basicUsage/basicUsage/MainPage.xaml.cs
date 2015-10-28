@@ -79,7 +79,7 @@ namespace basicUsage
             lcd.createSymbol(new byte[] { 0x00, 0x00, 0x0A, 0x00, 0x11, 0x0E, 0x00, 0x00 }, 0x00);
             
             // Here is printed string
-            lcd.prints("Good morning");
+            lcd.prints("Good morning,");
             
             // Navigation to second line
             lcd.gotoxy(0, 1);

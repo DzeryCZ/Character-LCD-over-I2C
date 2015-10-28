@@ -4,6 +4,7 @@
  *  Connect HD44780 LCD character display to Windows 10 IoT devices via I2C and PCF8574
  *
  *  Author: Jaroslav Zivny
+ *  Version: 1.1
  *  Keywords: Windows IoT, LCD, HD44780, PCF8574, I2C bus, Raspberry Pi 2
  *  Git: https://github.com/DzeryCZ/Character-LCD-over-I2C
 **/
@@ -225,7 +226,7 @@ namespace displayI2C
         {
             pulseEnable(Convert.ToByte((data & 0xf0) | (Rs << this._Rs)));
             pulseEnable(Convert.ToByte((data & 0x0f) << 4 | (Rs << this._Rs)));
-            Task.Delay(5).Wait();
+            //Task.Delay(5).Wait(); //In case of problem with displaying wrong characters uncomment this part
         }
 
 
@@ -236,7 +237,7 @@ namespace displayI2C
         {
             this._i2cPortExpander.Write(new byte[] { Convert.ToByte(data | (1 << this._En) | (this._backLight << this._Bl)) }); // Enable bit HIGH
             this._i2cPortExpander.Write(new byte[] { Convert.ToByte(data | (this._backLight << this._Bl)) }); // Enable bit LOW
-            Task.Delay(2).Wait();
+            //Task.Delay(2).Wait(); //In case of problem with displaying wrong characters uncomment this part
         }
 
 
